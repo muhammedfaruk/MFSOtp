@@ -3,7 +3,12 @@ import UIKit
 public class OTPStackView: UIStackView {
 
     var textFieldArray = [OTPTextField]()
-    public var numberOfOTPdigit = 6
+    public var numberOfOTPdigit = 4 {
+        didSet {
+            setupStackView()
+            setTextFields()
+        }
+    }
     
     var otpNumber = ""
     
