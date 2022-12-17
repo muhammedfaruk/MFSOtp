@@ -1,6 +1,9 @@
 public struct MFSOtp {
-    public private(set) var text = "Hello, World!"
-
     public init() {
+        MFSprint(value: "Hello World")
+    }
+        
+    public func MFSprint(value:String){
+        print(value)
     }
 }
